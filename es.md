@@ -17,6 +17,7 @@ Esta política explica a qué accede Lumen, para qué, y adónde va esa informac
 | Lo que se reproduce en otras apps (opcional) | El reproductor bajo el reloj | No |
 | Estadísticas de uso (opcional) | Tu pantalla de tiempo de uso | No |
 | Fotos que elegís (opcional) | Usar tu foto como fondo | No |
+| Colecciones de fondos (opcional) | Arte y fotos del espacio como fondo | Los pedidos de imágenes van a The Met y a la NASA; nada sobre vos |
 | Contacto de emergencia (opcional) | Mostrarlo en la pantalla de bloqueo | No |
 | Ajustes y personalizaciones | Recordar tus elecciones | Solo en tu propia copia de seguridad de Android |
 
@@ -31,6 +32,8 @@ Esta política explica a qué accede Lumen, para qué, y adónde va esa informac
 **Acceso a datos de uso (opcional).** Si das acceso a datos de uso, Lumen lee los eventos de uso de Android (tiempo en cada app, aperturas y desbloqueos) cuando abrís su pantalla de estadísticas. Esas cifras se calculan en tu teléfono, se te muestran y no se guardan ni se envían a ningún lado.
 
 **Fotos (opcional).** Cuando elegís una de tus fotos como fondo, la seleccionás con el selector de fotos de Android, así que Lumen solo ve la foto que elegiste. Lumen guarda una copia reducida en su almacenamiento privado para poder redibujar el fondo más adelante, y borra las copias que ya no usa.
+
+**Colecciones de fondos (opcional).** El estudio de fondos ofrece colecciones de obras de dominio público: grabados y pinturas del Museo Metropolitano de Arte (The Met) y fotos de la NASA. La lista de obras viene con la app. Cuando abrís una colección o elegís una obra, Lumen descarga sus imágenes de los servidores de The Met o de la NASA (images.metmuseum.org, images-assets.nasa.gov). Esos pedidos llevan solo lo que lleva cualquier descarga, como tu dirección IP, y un User-Agent con el nombre de la app; no se envía ningún dato sobre vos ni sobre tu teléfono. La obra que elegís se guarda como una de tus fotos, junto con su título y autor, para que el fondo muestre su crédito. Cada servidor trata los pedidos según sus propias condiciones.
 
 **Contacto de emergencia (opcional).** El nombre, el teléfono y la nota que ingreses se guardan en tu teléfono y se dibujan en el fondo de tu pantalla de bloqueo, para que quien encuentre el teléfono pueda contactarte. Cualquiera que mire tu pantalla de bloqueo puede verlos, así que ingresá solo lo que estés dispuesto a mostrar.
 

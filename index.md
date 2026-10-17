@@ -17,6 +17,7 @@ This policy explains what Lumen accesses, why, and where that information goes.
 | Media playing in other apps (optional) | The player under the clock | No |
 | App usage statistics (optional) | Your screen-time screen | No |
 | Photos you pick (optional) | Using your photo as wallpaper | No |
+| Wallpaper collections (optional) | Art and space photos as wallpapers | Image requests go to The Met and NASA; nothing about you |
 | Emergency contact (optional) | Shown on your lock screen | No |
 | Settings and app customizations | Remembering your choices | Only in your own Android backup |
 
@@ -31,6 +32,8 @@ This policy explains what Lumen accesses, why, and where that information goes.
 **Usage access (optional).** If you grant usage access, Lumen reads Android's usage events (time spent in apps, app opens and unlocks) when you open its statistics screen. These figures are calculated on your phone, shown to you, and not stored or sent anywhere.
 
 **Photos (optional).** When you choose one of your photos as a wallpaper, you pick it with Android's photo picker, so Lumen sees only the photo you chose. Lumen keeps a resized copy in its private storage, so it can redraw the wallpaper later. It deletes copies that are no longer used.
+
+**Wallpaper collections (optional).** The wallpaper studio offers collections of public-domain works: prints and paintings from The Metropolitan Museum of Art (The Met) and photos from NASA. The list of works ships with the app. When you open a collection or pick a work, Lumen downloads its images from The Met's or NASA's servers (images.metmuseum.org, images-assets.nasa.gov). Those requests carry only what any download does, such as your IP address, and a User-Agent naming the app; no information about you or your phone is sent. A work you pick is kept like one of your own photos, together with its title and author, so the wallpaper can show its credit. Each server handles requests under its own terms.
 
 **Emergency contact (optional).** The name, phone number and note you enter are stored on your phone and drawn on your lock screen wallpaper, so that whoever finds your phone can contact you. Anyone who looks at your lock screen can see them, so only enter what you are comfortable showing.
 

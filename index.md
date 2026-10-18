@@ -17,7 +17,7 @@ This policy explains what Lumen accesses, why, and where that information goes.
 | Media playing in other apps (optional) | The player under the clock | No |
 | App usage statistics (optional) | Your screen-time screen | No |
 | Photos you pick (optional) | Using your photo as wallpaper | No |
-| Wallpaper collections (optional) | Photos, art and Lumen Originals as wallpapers | The list and images come from Lumen's wallpaper server; nothing about you |
+| Wallpaper collections (optional) | Photos and Lumen Originals as wallpapers | The list and images come from Lumen's wallpaper server; nothing about you |
 | Emergency contact (optional) | Shown on your lock screen | No |
 | Settings and app customizations | Remembering your choices | Only in your own Android backup |
 
@@ -33,7 +33,7 @@ This policy explains what Lumen accesses, why, and where that information goes.
 
 **Photos (optional).** When you choose one of your photos as a wallpaper, you pick it with Android's photo picker, so Lumen sees only the photo you chose. Lumen keeps a resized copy in its private storage, so it can redraw the wallpaper later. It deletes copies that are no longer used.
 
-**Wallpaper collections (optional).** The wallpaper studio offers collections of pictures: photos from Wikimedia Commons, each under the license its author chose and shown with its credit; public-domain prints, paintings and photos from The Metropolitan Museum of Art (The Met) and NASA; and Lumen Originals, pictures made for Lumen with AI tools. Lumen's wallpaper server (fondos.fungicode.io, hosted by Cloudflare) holds the list of collections and every picture. While you browse the wallpaper studio, Lumen asks it for a newer list, at most twice a day, and downloads the pictures you look at or pick. Those requests carry only what any download does, such as your IP address, and a User-Agent naming the app; no information about you or your phone is sent, and the developer keeps no record of them. Cloudflare handles the requests under its own terms and privacy policy: <https://www.cloudflare.com/privacypolicy/>. A picture you pick is kept like one of your own photos, together with its title, author and license, so the wallpaper can show its credit.
+**Wallpaper collections (optional).** The wallpaper studio offers collections of pictures: photos from Wikimedia Commons, each under the license its author chose and shown with its credit; public-domain photos from NASA; and Lumen Originals, pictures made for Lumen with AI tools. Lumen's wallpaper server (fondos.fungicode.io, hosted by Cloudflare) holds the list of collections and every picture. While you browse the wallpaper studio, Lumen asks it for a newer list, at most twice a day, and downloads the pictures you look at or pick. Those requests carry only what any download does, such as your IP address, and a User-Agent naming the app; no information about you or your phone is sent, and the developer keeps no record of them. Cloudflare handles the requests under its own terms and privacy policy: <https://www.cloudflare.com/privacypolicy/>. A picture you pick is kept like one of your own photos, together with its title, author and license, so the wallpaper can show its credit.
 
 **Emergency contact (optional).** The name, phone number and note you enter are stored on your phone and drawn on your lock screen wallpaper, so that whoever finds your phone can contact you. Anyone who looks at your lock screen can see them, so only enter what you are comfortable showing.
 

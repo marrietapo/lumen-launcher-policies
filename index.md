@@ -2,7 +2,7 @@
 
 [Español](es.md)
 
-_Effective date: October 17, 2026_
+_Effective date: October 23, 2026_
 
 Lumen is a home screen (launcher) for Android. It is built to keep your data on your phone: Lumen has no servers and no user accounts, shows no ads, and includes no analytics or tracking tools. The developer never receives your personal data.
 
@@ -19,6 +19,7 @@ This policy explains what Lumen accesses, why, and where that information goes.
 | Photos you pick (optional) | Using your photo as wallpaper | No |
 | Wallpaper collections (optional) | Photos and Lumen Originals as wallpapers | The list and images come from Lumen's wallpaper server; nothing about you |
 | Emergency contact (optional) | Shown on your lock screen | No |
+| Contacts (optional) | Calling or messaging on WhatsApp from smart search | No |
 | Settings and app customizations | Remembering your choices | Only in your own Android backup |
 
 ## In detail
@@ -36,6 +37,8 @@ This policy explains what Lumen accesses, why, and where that information goes.
 **Wallpaper collections (optional).** The wallpaper studio offers collections of pictures: photos from Wikimedia Commons, each under the license its author chose and shown with its credit; public-domain photos from NASA; and Lumen Originals, pictures made for Lumen with AI tools. Lumen's wallpaper server (fondos.fungicode.io, hosted by Cloudflare) holds the list of collections and every picture. While you browse the wallpaper studio, Lumen asks it for a newer list, at most twice a day, and downloads the pictures you look at or pick. Those requests carry only what any download does, such as your IP address, and a User-Agent naming the app; no information about you or your phone is sent, and the developer keeps no record of them. Cloudflare handles the requests under its own terms and privacy policy: <https://www.cloudflare.com/privacypolicy/>. A picture you pick is kept like one of your own photos, together with its title, author and license, so the wallpaper can show its credit.
 
 **Emergency contact (optional).** The name, phone number and note you enter are stored on your phone and drawn on your lock screen wallpaper, so that whoever finds your phone can contact you. Anyone who looks at your lock screen can see them, so only enter what you are comfortable showing.
+
+**Smart search and contacts (optional).** In search you can type or say commands such as "alarm 7:30" or "call mom". Lumen reads them on your phone and sends them nowhere. What you say is turned into text by Android's speech recognizer, as in any voice search. For "call…" and "WhatsApp…", Lumen asks for permission to read your contacts and looks up the name you said there; it reads only names and numbers, only at that moment and only on your phone, and neither stores nor sends them. The call is placed by your phone app when you tap call, and the chat is opened by WhatsApp. With "message Anna: running late", Lumen opens WhatsApp or your messages app with the text already written: you send it from that app, and Lumen neither stores nor sends it. You can remove the contacts permission or turn smart search off at any time.
 
 **App lock.** Locked apps ask for your fingerprint, face or screen lock through Android's own prompt. Lumen never sees or stores your biometric data or your PIN; Android only tells it whether you were verified.
 

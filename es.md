@@ -2,7 +2,7 @@
 
 [English](./)
 
-_Vigente desde: 17 de octubre de 2026_
+_Vigente desde: 23 de octubre de 2026_
 
 Lumen es una pantalla de inicio (launcher) para Android, pensada para que tus datos se queden en tu teléfono. Lumen no tiene servidores ni cuentas de usuario, no muestra publicidad y no incluye herramientas de analítica ni de seguimiento. El desarrollador nunca recibe tus datos personales.
 
@@ -19,6 +19,7 @@ Esta política explica a qué accede Lumen, para qué, y adónde va esa informac
 | Fotos que elegís (opcional) | Usar tu foto como fondo | No |
 | Colecciones de fondos (opcional) | Fotos y Lumen Originals como fondo | La lista y las imágenes vienen del servidor de fondos de Lumen; nada sobre vos |
 | Contacto de emergencia (opcional) | Mostrarlo en la pantalla de bloqueo | No |
+| Contactos (opcional) | Llamar o escribir por WhatsApp desde la búsqueda inteligente | No |
 | Ajustes y personalizaciones | Recordar tus elecciones | Solo en tu propia copia de seguridad de Android |
 
 ## En detalle
@@ -36,6 +37,8 @@ Esta política explica a qué accede Lumen, para qué, y adónde va esa informac
 **Colecciones de fondos (opcional).** El estudio de fondos ofrece colecciones de imágenes: fotos de Wikimedia Commons, cada una con la licencia que eligió su autor y con su crédito; fotos de dominio público de la NASA; y Lumen Originals, imágenes creadas para Lumen con herramientas de IA. El servidor de fondos de Lumen (fondos.fungicode.io, alojado en Cloudflare) tiene la lista de colecciones y todas las imágenes. Mientras navegás el estudio de fondos, Lumen le pide una lista más nueva, como mucho dos veces por día, y descarga las imágenes que mirás o elegís. Esos pedidos llevan solo lo que lleva cualquier descarga, como tu dirección IP, y un User-Agent con el nombre de la app; no se envía ningún dato sobre vos ni sobre tu teléfono, y el desarrollador no guarda registro de ellos. Cloudflare trata los pedidos según sus propias condiciones y su política de privacidad: <https://www.cloudflare.com/privacypolicy/>. La imagen que elegís se guarda como una de tus fotos, junto con su título, autor y licencia, para que el fondo muestre su crédito.
 
 **Contacto de emergencia (opcional).** El nombre, el teléfono y la nota que ingreses se guardan en tu teléfono y se dibujan en el fondo de tu pantalla de bloqueo, para que quien encuentre el teléfono pueda contactarte. Cualquiera que mire tu pantalla de bloqueo puede verlos, así que ingresá solo lo que estés dispuesto a mostrar.
+
+**Búsqueda inteligente y contactos (opcional).** En la búsqueda podés escribir o decir comandos como «alarma 7:30» o «llamar a mamá». Lumen los interpreta en tu teléfono, sin enviarlos a ningún lado. Lo que dictás por voz lo convierte en texto el reconocedor de voz de Android, igual que en cualquier búsqueda por voz. Para «llamar a…» y «WhatsApp a…», Lumen te pide permiso para leer tus contactos y busca ahí el nombre que dijiste; solo lee nombres y números, solo en el momento y solo en tu teléfono, y no los guarda ni los envía. La llamada la hace tu app de teléfono cuando tocás llamar, y el chat lo abre WhatsApp. Con «mensaje a Ana: llego tarde», Lumen abre WhatsApp o tu app de mensajes con el texto ya escrito: lo enviás vos desde esa app, y Lumen no lo guarda ni lo envía. Podés quitar el permiso de contactos o apagar la búsqueda inteligente en cualquier momento.
 
 **Bloqueo de apps.** Las apps bloqueadas piden tu huella, tu rostro o el bloqueo de pantalla mediante el diálogo propio de Android. Lumen nunca ve ni guarda tus datos biométricos ni tu PIN; Android solo le informa si te verificaste.
 

@@ -1,9 +1,9 @@
 # Lumen Launcher — Privacy Policy
 
 
-_Effective date: October 23, 2026_
+_Effective date: October 24, 2026_
 
-Lumen is a home screen (launcher) for Android. It is built to keep your data on your phone: Lumen has no servers and no user accounts, shows no ads, and includes no analytics or tracking tools. The developer never receives your personal data.
+Lumen is a home screen (launcher) for Android. It is built to keep your data on your phone: Lumen has no user accounts, stores none of your data on any server, shows no ads, and includes no analytics or tracking tools. The developer never receives your personal data.
 
 This policy explains what Lumen accesses, why, and where that information goes.
 
@@ -49,7 +49,7 @@ This policy explains what Lumen accesses, why, and where that information goes.
 
 ## Sharing and selling
 
-The developer does not collect your data, so there is nothing to sell or share. The only information that leaves your phone is the rounded location sent to MET Norway when weather is on.
+The developer does not collect your data, so there is nothing to sell or share. Apart from the wallpaper downloads and the purchase check described above, which carry nothing about you, the only information that leaves your phone is the rounded location sent to MET Norway when weather is on.
 
 ## Children
 
@@ -65,4 +65,4 @@ If Lumen starts handling data differently, for example by adding a feature that 
 
 ## Contact
 
-Questions about this policy: [marrietaporras@gmail.com](mailto:marrietaporras@gmail.com)
+Questions about this policy: [support@fungicode.io](mailto:support@fungicode.io)

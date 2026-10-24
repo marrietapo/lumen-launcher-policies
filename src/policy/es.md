@@ -1,9 +1,9 @@
 # Lumen Launcher — Política de privacidad
 
 
-_Vigente desde: 23 de octubre de 2026_
+_Vigente desde: 24 de octubre de 2026_
 
-Lumen es una pantalla de inicio (launcher) para Android, pensada para que tus datos se queden en tu teléfono. Lumen no tiene servidores ni cuentas de usuario, no muestra publicidad y no incluye herramientas de analítica ni de seguimiento. El desarrollador nunca recibe tus datos personales.
+Lumen es una pantalla de inicio (launcher) para Android, pensada para que tus datos se queden en tu teléfono. Lumen no tiene cuentas de usuario, no guarda tus datos en ningún servidor, no muestra publicidad y no incluye herramientas de analítica ni de seguimiento. El desarrollador nunca recibe tus datos personales.
 
 Esta política explica a qué accede Lumen, para qué, y adónde va esa información.
 
@@ -49,7 +49,7 @@ Esta política explica a qué accede Lumen, para qué, y adónde va esa informac
 
 ## Compartir y vender datos
 
-El desarrollador no recopila tus datos, así que no hay nada que vender ni compartir. Lo único que sale de tu teléfono son las coordenadas redondeadas que se envían a MET Norway cuando el clima está activado.
+El desarrollador no recopila tus datos, así que no hay nada que vender ni compartir. Aparte de las descargas de fondos y la verificación de compra descritas arriba, que no llevan nada sobre vos, lo único que sale de tu teléfono son las coordenadas redondeadas que se envían a MET Norway cuando el clima está activado.
 
 ## Menores
 
@@ -65,4 +65,4 @@ Si Lumen empieza a tratar los datos de otra forma, por ejemplo al sumar una func
 
 ## Contacto
 
-Consultas sobre esta política: [marrietaporras@gmail.com](mailto:marrietaporras@gmail.com)
+Consultas sobre esta política: [support@fungicode.io](mailto:support@fungicode.io)

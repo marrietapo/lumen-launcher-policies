@@ -15,8 +15,8 @@ export const LANG_NAMES: Record<Lang, string> = {
 
 export const SITE = "https://lumen.fungicode.io";
 
-/** Public contact until hello@fungicode.io is confirmed to receive mail. */
-export const CONTACT_EMAIL = "marrietaporras@gmail.com";
+/** Lumen's public contact: Cloudflare Email Routing forwards it to the developer. */
+export const CONTACT_EMAIL = "support@fungicode.io";
 
 /** Languages the privacy policy is written in; the rest show the English text. */
 export const POLICY_LANGS: readonly Lang[] = ["en", "es"];

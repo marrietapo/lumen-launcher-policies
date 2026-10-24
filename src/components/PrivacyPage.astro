@@ -1,0 +1,25 @@
+---
+import Base from "../layouts/Base.astro";
+import { Content as English } from "../policy/en.md";
+import { Content as Spanish } from "../policy/es.md";
+import { path, siteStrings, type Lang } from "../i18n/site";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = siteStrings(lang);
+// Languages without their own policy get the English one, saying so in their language.
+const Policy = lang === "es" ? Spanish : English;
+const fallback = lang !== "en" && lang !== "es";
+---
+<Base lang={lang} page="privacy" title={`${t.privacyTitle} · Lumen`} description={t.privacy.body}>
+  <article class="prose" lang={fallback ? "en" : lang}>
+    {fallback && (
+      <p class="notice" lang={lang}>
+        {t.privacyOnlyIn} <a href={path("es", "privacy")} hreflang="es">Español</a>
+      </p>
+    )}
+    <Policy />
+  </article>
+</Base>

@@ -1,0 +1,10 @@
+---
+import PrivacyPage from "../../components/PrivacyPage.astro";
+import { LANGS, type Lang } from "../../i18n/site";
+
+export function getStaticPaths() {
+  return LANGS.filter((lang) => lang !== "en").map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+---
+<PrivacyPage lang={lang} />

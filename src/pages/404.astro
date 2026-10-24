@@ -1,0 +1,12 @@
+---
+import Base from "../layouts/Base.astro";
+import { siteStrings } from "../i18n/site";
+const t = siteStrings("en").notFound;
+---
+<Base lang="en" page="404" title={`${t.title} · Lumen`} description={t.body}>
+  <article class="prose center">
+    <h1>404</h1>
+    <p class="lead">{t.body}</p>
+    <a class="arrow" href="/">{t.home} →</a>
+  </article>
+</Base>

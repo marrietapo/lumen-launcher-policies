@@ -1,0 +1,85 @@
+---
+import Base from "../layouts/Base.astro";
+import Phone from "./Phone.astro";
+import { appStrings, path, siteStrings, type Lang } from "../i18n/site";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = siteStrings(lang);
+const a = appStrings(lang);
+
+const features = [
+  { title: a.onboarding_index_title, body: a.guide_index_reach_body, lead: a.onboarding_index_summary },
+  { title: t.clock.title, body: t.clock.body },
+  { title: t.wallpapers.title, body: t.wallpapers.body },
+  { title: a.guide_screen_time_title, body: t.screenTimeBody },
+  { title: a.guide_protect_title, body: a.guide_protect_body, pro: true },
+  { title: a.guide_disconnect_title, body: a.guide_disconnect_body, pro: true },
+  { title: a.guide_focus_title, body: a.guide_focus_body, pro: true },
+  { title: t.search.title, body: t.search.body, pro: true },
+  { title: t.bedside.title, body: t.bedside.body, pro: true },
+];
+const benefits = [
+  a.pro_benefit_styles,
+  a.pro_benefit_clock,
+  a.pro_benefit_wallpapers,
+  a.pro_benefit_fonts,
+  a.pro_benefit_lock,
+  a.pro_benefit_disconnect,
+  a.pro_benefit_commands,
+  a.pro_benefit_bedside,
+  a.pro_benefit_future,
+];
+---
+<Base lang={lang} page="home" title={t.metaTitle} description={t.metaDescription}>
+  <section class="hero">
+    <div class="hero-text">
+      <p class="kicker">{t.kicker}</p>
+      <h1>{a.onboarding_welcome_title}</h1>
+      <p class="lead">{t.heroSub}</p>
+      <p class="play" aria-disabled="true">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 2.8v18.4c0 .5.6.9 1 .6l15.6-9.2a.7.7 0 0 0 0-1.2L5 2.2c-.4-.3-1 .1-1 .6Z" /></svg>
+        {t.playSoon}
+      </p>
+    </div>
+    <Phone lang={lang} label={t.phoneLabel} favorites={t.favorites} />
+  </section>
+
+  <section id="features" class="features">
+    <h2>{t.featuresTitle}</h2>
+    <ul class="grid">
+      {features.map((f) => (
+        <li class="card">
+          <h3>
+            {f.title}
+            {f.pro && <span class="tag">{t.proTag}</span>}
+          </h3>
+          {f.lead && <p class="card-lead">{f.lead}</p>}
+          <p>{f.body}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section id="pro" class="pro">
+    <div class="pro-head">
+      <h2>Lumen <span class="accent">Pro</span></h2>
+      <p class="lead">{a.pro_hero}</p>
+    </div>
+    <div class="pro-body">
+      <h3>{a.pro_section_benefits}</h3>
+      <ul class="benefits">
+        {benefits.map((b) => <li>{b}</li>)}
+      </ul>
+      <p class="note">{a.pro_free_note}</p>
+    </div>
+  </section>
+
+  <section class="privacy-band">
+    <h2>{t.privacy.title}</h2>
+    <p class="lead">{t.privacy.body}</p>
+    <a class="arrow" href={path(lang, "privacy")}>{t.privacy.link} →</a>
+  </section>
+</Base>

@@ -1,6 +1,5 @@
 # Lumen Launcher — Política de privacidad
 
-[English](./)
 
 _Vigente desde: 23 de octubre de 2026_
 

@@ -1,0 +1,15 @@
+---
+/** Lumen's mark: the launcher icon's three list bars and the accent dot (app/src/main/res/drawable). */
+interface Props {
+  size?: number;
+  plate?: boolean;
+}
+const { size = 28, plate = false } = Astro.props;
+---
+<svg width={size} height={size} viewBox="18 18 72 72" aria-hidden="true" class="mark">
+  {plate && <rect x="18" y="18" width="72" height="72" rx="18" fill="#101828" />}
+  <path fill="currentColor" d="M52,36h22a4,4 0,0 1,0 8h-22a4,4 0,0 1,0 -8z" />
+  <path fill="currentColor" fill-opacity="0.75" d="M36,52h36a4,4 0,0 1,0 8h-36a4,4 0,0 1,0 -8z" />
+  <path fill="currentColor" fill-opacity="0.5" d="M36,66h28a4,4 0,0 1,0 8h-28a4,4 0,0 1,0 -8z" />
+  <circle cx="40" cy="40" r="7" fill="var(--accent, #FF7A00)" />
+</svg>

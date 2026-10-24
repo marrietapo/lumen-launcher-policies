@@ -1,6 +1,5 @@
 # Lumen Launcher — Privacy Policy
 
-[Español](es.md)
 
 _Effective date: October 23, 2026_
 

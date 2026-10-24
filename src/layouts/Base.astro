@@ -1,0 +1,94 @@
+---
+import Mark from "../components/Mark.astro";
+import { LANGS, LANG_NAMES, SITE, path, siteStrings, type Lang, type Page } from "../i18n/site";
+import "../styles/global.css";
+
+interface Props {
+  lang: Lang;
+  page: Page | "404";
+  title: string;
+  description: string;
+}
+const { lang, page, title, description } = Astro.props;
+const t = siteStrings(lang);
+const home = path(lang, "home");
+// The 404 page has no language twins.
+const twins = page === "404" ? [] : LANGS.map((l) => ({ lang: l, href: path(l, page) }));
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/SpaceGrotesk.ttf" as="font" type="font/ttf" crossorigin />
+    {page !== "404" && <link rel="canonical" href={SITE + path(lang, page)} />}
+    {twins.map((twin) => <link rel="alternate" hreflang={twin.lang} href={SITE + twin.href} />)}
+    {twins.length > 0 && <link rel="alternate" hreflang="x-default" href={SITE + path("en", page as Page)} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="Lumen" />
+  </head>
+  <body>
+    <a class="skip" href="#main">↓</a>
+    <header class="top">
+      <a class="brand" href={home}>
+        <Mark size={26} />
+        <span>lumen</span>
+      </a>
+      <nav class="top-nav" aria-label="Lumen">
+        <a href={`${home}#features`}>{t.nav.features}</a>
+        <a href={`${home}#pro`}>{t.nav.pro}</a>
+        <a href={path(lang, "privacy")} aria-current={page === "privacy" ? "page" : undefined}>{t.nav.privacy}</a>
+        <a href={path(lang, "support")} aria-current={page === "support" ? "page" : undefined}>{t.nav.support}</a>
+      </nav>
+      {twins.length > 0 && (
+        <details class="langs">
+          <summary aria-label={t.nav.language}>{lang.toUpperCase()}</summary>
+          <ul>
+            {twins.map((twin) => (
+              <li>
+                <a href={twin.href} hreflang={twin.lang} lang={twin.lang} aria-current={twin.lang === lang ? "true" : undefined}>
+                  {LANG_NAMES[twin.lang]}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="foot">
+      <div class="foot-row">
+        <a class="brand small" href={home}><Mark size={20} /><span>lumen</span></a>
+        <nav aria-label={t.nav.support}>
+          <a href={path(lang, "privacy")}>{t.nav.privacy}</a>
+          <a href={path(lang, "support")}>{t.nav.support}</a>
+        </nav>
+      </div>
+      {twins.length > 0 && (
+        <nav class="foot-langs" aria-label={t.nav.language}>
+          {twins.map((twin) => (
+            <a href={twin.href} hreflang={twin.lang} lang={twin.lang} aria-current={twin.lang === lang ? "true" : undefined}>
+              {LANG_NAMES[twin.lang]}
+            </a>
+          ))}
+        </nav>
+      )}
+      <p class="foot-note">
+        <a href="https://fungicode.io">{t.footerMade}</a> · © {new Date().getFullYear()} ·
+        <a href="/fonts/OFL-SpaceGrotesk.txt">{t.footerFonts}</a>
+      </p>
+    </footer>
+  </body>
+</html>

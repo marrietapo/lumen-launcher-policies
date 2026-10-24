@@ -1,0 +1,27 @@
+---
+import Base from "../layouts/Base.astro";
+import { CONTACT_EMAIL, siteStrings, type Lang } from "../i18n/site";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = siteStrings(lang);
+const s = t.support;
+---
+<Base lang={lang} page="support" title={`${s.title} · Lumen`} description={s.intro}>
+  <article class="prose">
+    <h1>{s.title}</h1>
+    <p class="lead">{s.intro}</p>
+    <div class="faq">
+      {s.faq.map(([q, answer]) => (
+        <details>
+          <summary>{q}</summary>
+          <p>{answer}</p>
+        </details>
+      ))}
+    </div>
+    <h2>{s.contactTitle}</h2>
+    <p>{s.contactBody} <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></p>
+  </article>
+</Base>

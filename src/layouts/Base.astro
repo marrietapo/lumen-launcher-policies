@@ -25,7 +25,9 @@ const twins = page === "404" ? [] : LANGS.map((l) => ({ lang: l, href: path(l, p
     <meta name="color-scheme" content="dark light" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preload" href="/fonts/SpaceGrotesk.ttf" as="font" type="font/ttf" crossorigin />
     {page !== "404" && <link rel="canonical" href={SITE + path(lang, page)} />}
     {twins.map((twin) => <link rel="alternate" hreflang={twin.lang} href={SITE + twin.href} />)}
